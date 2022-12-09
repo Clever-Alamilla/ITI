@@ -1,0 +1,95 @@
+Algoritmo Hotel_transilvania
+	repetir 
+	Limpiar Pantalla
+	Escribir "Hola buen dia, esperamos que se encuentre bien, es bienvenido a nuestro hotel, a continuacion le presenatmos nuestra gama de opciones"
+	Escribir "Menu de Habitaciones Disponibles"
+	Escribir "1. Habitacion regular frente al mar"
+	Escribir "2. Suit-1"
+	Escribir "3. Suit-2 con vista al mar"
+	Escribir "4. Habitacion regular en 1er nivel"
+	Escribir "5. Gracias por su visita"
+	escribir "el precio por habitacion sera:suit= 2000 regular= 1000"
+	Escribir "Elija una opcion del (1-5)"
+	suit= 2000 
+	regular= 1000
+	leer op
+		Segun op Hacer
+			1:
+				Escribir "Usted ah elegido la Habitacion regular frente al mar"
+				
+				Si op = 2 o (op= 3) Entonces
+					escribir "usted tiene un descuento del 20%"
+					Descuento= suit * 0.20
+					costo= suit -descuento
+					Iva= costo * 0.16
+					Precio= costo + iva 
+					escribir "El precio a pagar sera: " precio
+				SiNo
+					escribir "usted tiene un descuento del 10%"
+					Descuento= regular * 0.10
+					costo= regular -descuento
+					Iva= costo * 0.16
+					Precio= costo + iva 
+					escribir "El precio a pagar sera: " precio
+				Fin Si
+				
+				
+			2:
+				Escribir "Usted ah elegido la Suit-1"
+				Si op = 2 o (op= 3) Entonces
+					escribir "usted tiene un descuento del 20%"
+					Descuento= suit * 0.20
+					costo= suit -descuento
+					Iva= costo * 0.16
+					Precio= costo + iva 
+					escribir "El precio a pagar sera: " precio
+				SiNo
+					escribir "usted tiene un descuento del 10%"
+					Descuento= regular * 0.10
+					costo= regular -descuento
+					Iva= costo * 0.16
+					Precio= costo + iva 
+					escribir "El precio a pagar sera: " precio
+				Fin Si
+			3:
+				Escribir "Usted ah eligido la suit-2 con vista al mar"
+				Si op = 2 o (op= 3) Entonces
+					escribir "usted tiene un descuento del 20%"
+					Descuento= suit * 0.20
+					costo= suit -descuento
+					Iva= costo * 0.16
+					Precio= costo + iva 
+					escribir "El precio a pagar sera: " precio
+				SiNo
+					escribir "usted tiene un descuento del 10%"
+					Descuento= regular * 0.10
+					costo= regular -descuento
+					Iva= costo * 0.16
+					Precio= costo + iva 
+					escribir "El precio a pagar sera: " precio
+				Fin Si
+			4:
+				Escribir "Usted ah elegido la habitacion regular en 1er nivel"
+				Si op = 2 o (op= 3) Entonces
+					escribir "usted tiene un descuento del 20%"
+					Descuento= suit * 0.20
+					costo= suit -descuento
+					Iva= costo * 0.16
+					Precio= costo + iva 
+					escribir "El precio a pagar sera: " precio
+				SiNo
+					escribir "usted tiene un descuento del 10%"
+					Descuento= regular * 0.10
+					costo= regular -descuento
+					Iva= costo * 0.16
+					Precio= costo + iva 
+					escribir "El precio a pagar sera: " precio
+				Fin Si
+			5: 
+				Escribir "Gracias por su visita."
+			De Otro Modo:
+				Escribir "Opcion no valida"
+		Fin segun
+	Hasta Que op = 5
+	
+FinAlgoritmo
